@@ -1,0 +1,10 @@
+[03-30 10:22:24,702, 3257] main.java.example.Main Starting at http://127.0.0.1:8080
+[03-30 10:22:26,172, 4727] main.java.example.Main Server started
+[03-30 10:22:34,336, 12891] main.java.servlets.ServletUser Limit: 1. Count: 0
+[03-30 10:22:34,337, 12892] main.java.servlets.ServletUser User pass
+[03-30 10:22:41,942, 20497] main.java.servlets.ServletUser Limit: 1. Count: 1
+[03-30 10:22:41,942, 20497] main.java.servlets.ServletUser User were rejected...
+[03-30 10:22:48,516, 27071] main.java.servlets.ServletUser Limit: 1. Count: 1
+[03-30 10:22:48,516, 27071] main.java.servlets.ServletUser User were rejected...
+[03-30 10:23:11,540, 50095] main.java.servlets.ServletUser Limit: 1. Count: 1
+[03-30 10:23:11,540, 50095] main.java.servlets.ServletUser User were rejected...

@@ -22,13 +22,12 @@ public class ServletUser extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doGet(req, resp);
         resp.setContentType("text/html;charset=utf-8");
         String remove = req.getParameter("remove");
 
         if (remove != null) {
             serverUserRegistrable.removeUser();
-            resp.getWriter().print("Goodbay!!");
+            resp.getWriter().println("Goodbay!!");
             resp.setStatus(HttpServletResponse.SC_OK);
             return;
         }
@@ -41,11 +40,11 @@ public class ServletUser extends HttpServlet {
         if (limit > count) {
             logger.info("User pass");
             serverUserRegistrable.addUser();
-            resp.getWriter().print("Hello, User!!");
+            resp.getWriter().println("Hello, User!!");
             resp.setStatus(HttpServletResponse.SC_OK);
         } else {
             logger.info("User were rejected...");
-            resp.getWriter().print("Server is closed for maintenance!");
+            resp.getWriter().println("Server is closed for maintenance!");
             resp.setStatus(HttpServletResponse.SC_FORBIDDEN);
         }
     }

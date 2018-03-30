@@ -34,8 +34,8 @@ public class Main {
         ServerUserRegistrable serverUserRegistrable = new ServerUserRegistr(1);
         ServerControllerMBean serverControllerMBean = new ServerController(serverUserRegistrable);
         MBeanServer mBeanServer = ManagementFactory.getPlatformMBeanServer();
-        ObjectName name = new ObjectName("ServerManager:type=AccountServerController");
-        mBeanServer.registerMBean(serverUserRegistrable, name);
+        ObjectName name = new ObjectName("ServerManager:type=ServerUserRegistr");
+        mBeanServer.registerMBean(serverControllerMBean, name);
 
         Server server = new Server(port);
         ServletContextHandler contextHandler = new ServletContextHandler(ServletContextHandler.SESSIONS);
